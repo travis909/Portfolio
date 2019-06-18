@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Navigation from './Components/Navigation.js';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from './Components/home.js';
 import About from './Components/about.js';
 import Education from './Components/education.js';
@@ -15,6 +15,7 @@ export default class App extends Component {
           <Navigation />
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/Portfolio" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/projects" component={Projects} />
             <Route path="/skills" component={Skills} />

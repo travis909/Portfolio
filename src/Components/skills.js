@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Skills() {
-    return <div>Skills/Experience</div>;
+    return <div>Skills/Education</div>;
 }
 
 export default Skills;
