@@ -11,7 +11,12 @@ import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import MenuIcon from '@material-ui/icons/Menu';
-import Home from '@material-ui/icons/';
+import Home from '@material-ui/icons/Home';
+import Person from '@material-ui/icons/Person';
+import Work from '@material-ui/icons/Work';
+import Mail from '@material-ui/icons/Mail';
+import School from '@material-ui/icons/School';
+
 
 const useStyle1 = makeStyles(theme => ({
   root: {
@@ -25,16 +30,11 @@ const useStyle1 = makeStyles(theme => ({
   },
 }));
 
-
-
 export default function ButtonAppBar() {
   const classes = useStyle1();
-
-
-
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" >
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
             Travis Evans
@@ -58,7 +58,6 @@ const useStyle2 = makeStyles({
 
 function TemporaryDrawer() {
   const navStyle = {
-    color: 'purple',
     flex: 1,
     flexDirection: 'row',
     margin: '20px'
@@ -87,11 +86,10 @@ function TemporaryDrawer() {
 
       <List>
         <ListItem><Home /><Link style={navStyle} to="/">Home</Link></ListItem>
-        <ListItem><Link style={navStyle} to="/about">About</Link></ListItem>
-        <ListItem><Link style={navStyle} to="/projects">Projects</Link></ListItem>
-        <ListItem><Link style={navStyle} to="/education">Education</Link></ListItem>
-        <ListItem><Link style={navStyle} to="/skills">Skills</Link></ListItem>
-        <ListItem><Link to="/"/></ListItem>
+        <ListItem><Person /><Link style={navStyle} to="/about">About</Link></ListItem>
+        <ListItem><Work /><Link style={navStyle} to="/projects">Projects</Link></ListItem>
+        <ListItem><School /><Link style={navStyle} to="/skills">Skills</Link></ListItem>
+        <ListItem><Mail /><Link style={navStyle} to="/contact">Contact</Link></ListItem>
       </List>   
       <Divider />
     </div>
@@ -99,7 +97,7 @@ function TemporaryDrawer() {
 
   return (
     <div>
-      <Button onClick={toggleDrawer('right', true)}><MenuIcon/></Button>
+      <Button onClick={toggleDrawer('right', true)}><MenuIcon style={{color: 'white'}}/></Button>
       <SwipeableDrawer
         anchor="right"
         open={state.right}
