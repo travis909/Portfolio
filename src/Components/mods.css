@@ -1,0 +1,7 @@
+html, body, #home, div, #app>div {
+    height: 70%
+  }
+
+  .homeText {
+    color: linear-gradient(#001817, #4f3f5c);
+  }

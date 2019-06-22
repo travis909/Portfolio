@@ -1,0 +1,8 @@
+.App {
+    justify-content: center;
+    align-items: center;
+}
+
+html, body, #app, #app>div {
+    height: 100%
+  }

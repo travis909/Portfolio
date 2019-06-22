@@ -6,13 +6,14 @@ import About from './Components/about.js';
 import Contact from './Components/contact.js';
 import Skills from './Components/skills.js';
 import Projects from './Components/projects.js';
+import './App.css'
 
 
 export default class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
+        <div>
           <Navigation />
           <Switch>
             <Route exact path="/" component={Home} />
