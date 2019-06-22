@@ -1,7 +1,13 @@
-import React from 'react'
+import React from 'react';
+import './pages.css';
+import Typography from '@material-ui/core/Typography';
 
-function Home() {
-    return <div>Home</div>;
+const Home = () => {
+    return ( 
+        <div>
+            <Typography>Home</Typography>
+        </div>
+    );
 }
 
 export default Home;

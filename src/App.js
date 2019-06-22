@@ -7,6 +7,7 @@ import Contact from './Components/contact.js';
 import Skills from './Components/skills.js';
 import Projects from './Components/projects.js';
 
+
 export default class App extends Component {
   render() {
     return (

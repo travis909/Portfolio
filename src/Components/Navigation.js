@@ -16,7 +16,7 @@ import Person from '@material-ui/icons/Person';
 import Work from '@material-ui/icons/Work';
 import Mail from '@material-ui/icons/Mail';
 import School from '@material-ui/icons/School';
-
+import './nav.css'
 
 const useStyle1 = makeStyles(theme => ({
   root: {
@@ -34,7 +34,7 @@ export default function ButtonAppBar() {
   const classes = useStyle1();
   return (
     <div className={classes.root}>
-      <AppBar position="static" >
+      <AppBar position="static" className='nav'>
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
             Travis Evans
@@ -47,15 +47,6 @@ export default function ButtonAppBar() {
   );
 }
 
-const useStyle2 = makeStyles({
-  list: {
-    width: 250,
-  },
-  fullList: {
-    width: 'auto',
-  },
-});
-
 function TemporaryDrawer() {
   const navStyle = {
     flex: 1,
@@ -63,7 +54,6 @@ function TemporaryDrawer() {
     margin: '20px'
   };
 
-  const classes = useStyle2();
   const [state, setState] = React.useState({
     right: false,
   });
@@ -78,7 +68,7 @@ function TemporaryDrawer() {
 
   const sideList = side => (
     <div
-      className={classes.list}
+      className='navList'
       role="presentation"
       onClick={toggleDrawer(side, false)}
       onKeyDown={toggleDrawer(side, false)}
