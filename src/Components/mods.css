@@ -1,7 +1,8 @@
-html, body, #home, div, #app>div {
-    height: 70%
+  .homeText {
+    color: linear-gradient(#110018, #61407c);
   }
 
-  .homeText {
-    color: linear-gradient(#001817, #4f3f5c);
-  }
+
+.title {
+  text-shadow: 1px 1px 1px rgb(67, 14, 80), 0 0 25px rgb(169, 165, 173), 0 0 5px rgb(97, 23, 131);
+}

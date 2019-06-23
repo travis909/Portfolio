@@ -75,11 +75,11 @@ function TemporaryDrawer() {
     >
 
       <List>
-        <ListItem><Home /><Link style={navStyle} to="/">Home</Link></ListItem>
-        <ListItem><Person /><Link style={navStyle} to="/about">About</Link></ListItem>
-        <ListItem><Work /><Link style={navStyle} to="/projects">Projects</Link></ListItem>
-        <ListItem><School /><Link style={navStyle} to="/skills">Skills</Link></ListItem>
-        <ListItem><Mail /><Link style={navStyle} to="/contact">Contact</Link></ListItem>
+        <ListItem className='linkText'><Home /><Link style={navStyle} to="/">Home</Link></ListItem>
+        <ListItem className='linkText'><Person /><Link style={navStyle} to="/about">About</Link></ListItem>
+        <ListItem className='linkText'><Work /><Link style={navStyle} to="/projects">Projects</Link></ListItem>
+        <ListItem className='linkText'><School /><Link style={navStyle} to="/skills">Skills</Link></ListItem>
+        <ListItem className='linkText'><Mail /><Link style={navStyle} to="/contact">Contact</Link></ListItem>
       </List>   
       <Divider />
     </div>

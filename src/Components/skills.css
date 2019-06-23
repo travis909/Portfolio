@@ -1,0 +1,18 @@
+.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.image {
+    background-image: image('/home/travis909/Projects/portfolio/src/Components/images/umuc.jpeg')
+}
+
+.card {
+    max-width: 100;
+}
+
+.media {
+    max-height: 400;
+}
