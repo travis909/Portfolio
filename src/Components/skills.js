@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
+import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -10,14 +11,23 @@ import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import { red } from '@material-ui/core/colors';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
+
+
+export default class Skills extends React.Component {
+  render() {
+    return (
+      <Grid container justify="center" alignItems="center">
+        <UmucCard />
+        <WcuCard />
+      </Grid>  
+    );
+  }
+}
 
 const useStyles = makeStyles(theme => ({
   card: {
+    backgroundColor: '#d3d3d3',
     maxWidth: 345,
     margin: 25,
   },
@@ -36,7 +46,9 @@ const useStyles = makeStyles(theme => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: red[500],
+    margin: 10,
+    border: 2,
+    borderStyle: 'solid',
   },
 }));
 
@@ -53,21 +65,16 @@ export function UmucCard() {
     <Card className={classes.card}>
       <CardHeader
         avatar={
-          <Avatar aria-label="UMUC" className={classes.avatar} style={{fontSize: '10pt'}}>
-            UMUC
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="Settings">
-            <MoreVertIcon />
-          </IconButton>
+          <Grid container justify="center" alignItems="center">
+            <Avatar alt="Broken" src={require("./images/umucMini.png")} className={classes.avatar} />
+          </Grid>
         }
         title="University of Maryland University College"
         subheader="Spring 2019 - Spring 2021"
       />
       <CardMedia
         className={classes.media}
-        image="src/Components/images/umuc.jpeg"
+        image={require("./images/umucBackground.png")}
         title="University of Maryland University College"
       />
       <CardContent>
@@ -76,12 +83,6 @@ export function UmucCard() {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="Add to favorites">
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label="Share">
-          <ShareIcon />
-        </IconButton>
         <IconButton
           className={clsx(classes.expand, {
             [classes.expandOpen]: expanded,
@@ -106,10 +107,57 @@ export function UmucCard() {
   );
 }
 
-export default class Skills extends React.Component {
-  render() {
-    return (
-      <UmucCard />
-    );
+export function WcuCard() {
+  const classes = useStyles();
+  const [expanded, setExpanded] = React.useState(false);
+
+  function handleExpandClick() {
+    setExpanded(!expanded);
   }
+
+  return (
+    <div className='center'>
+    <Card className={classes.card}>
+      <CardHeader
+        avatar={
+          <Grid container justify="center" alignItems="center">
+            <Avatar alt="WCU" src={require("./images/WcuRam.png")} className={classes.avatar} />
+          </Grid>
+        }
+        title="West Chester University"
+        subheader="Fall 2011 - Spring 2016"
+      />
+      <CardMedia
+        className={classes.media}
+        image={require("./images/WcuBackground.png")}
+        title="West Chester University"
+      />
+      <CardContent>
+        <Typography variant="body2" color="textSecondary" component="p">
+          B.A. Psychology
+        </Typography>
+      </CardContent>
+      <CardActions disableSpacing>
+        <IconButton
+          className={clsx(classes.expand, {
+            [classes.expandOpen]: expanded,
+          })}
+          onClick={handleExpandClick}
+          aria-expanded={expanded}
+          aria-label="Show more"
+        >
+          <ExpandMoreIcon />
+        </IconButton>
+      </CardActions>
+      <Collapse in={expanded} timeout="auto" unmountOnExit>
+        <CardContent>
+          <Typography paragraph>Summary:</Typography>
+          <Typography paragraph>
+            ...
+          </Typography>
+        </CardContent>
+      </Collapse>
+    </Card>
+    </div>
+  );
 }
