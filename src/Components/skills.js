@@ -18,9 +18,18 @@ export default class Skills extends React.Component {
   render() {
     return (
       <Grid container justify="center" alignItems="center">
-        <UmucCard />
-        <WcuCard />
-      </Grid>  
+        <Grid container justify="center" alignItems="center">
+          <UmucCard />
+          <WcuCard />
+        </Grid>
+        <Grid container justify="center" alignItems="center" flexDirection="row">
+         <Grid item> <RjsAvatar /> </Grid>
+         <Grid item> <JsAvatar /> </Grid>
+         <Grid item> <Java /> </Grid>
+         <Grid item> <Css/> </Grid>
+         <Grid item> <Html /> </Grid>
+        </Grid>
+      </Grid>
     );
   }
 }
@@ -49,6 +58,11 @@ const useStyles = makeStyles(theme => ({
     margin: 10,
     border: 2,
     borderStyle: 'solid',
+  },
+  bigAvatar: {
+    margin: 10,
+    width: 90,
+    height: 90,
   },
 }));
 
@@ -79,7 +93,7 @@ export function UmucCard() {
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          M.S. Information Technology - Specialization in Software Engineering
+          M.S. Information Technology
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -98,7 +112,7 @@ export function UmucCard() {
         <CardContent>
           <Typography paragraph>Summary:</Typography>
           <Typography paragraph>
-            ...
+            Specialization in Software Engineering
           </Typography>
         </CardContent>
       </Collapse>
@@ -124,7 +138,7 @@ export function WcuCard() {
             <Avatar alt="WCU" src={require("./images/WcuRam.png")} className={classes.avatar} />
           </Grid>
         }
-        title="West Chester University"
+        title="West Chester University of Pennsylvania"
         subheader="Fall 2011 - Spring 2016"
       />
       <CardMedia
@@ -159,5 +173,65 @@ export function WcuCard() {
       </Collapse>
     </Card>
     </div>
+  );
+}
+
+export function RjsAvatar() {
+  const classes = useStyles();
+  return (
+    <Grid container justify="center" alignItems="center">
+      <Grid container justify="center" alignItems="center">
+        <Avatar alt="RjsLogo" src={require("./images/logo.svg")} className={classes.bigAvatar} />   
+      </Grid>
+      <Typography>React.js</Typography>
+    </Grid>
+  );
+}
+
+export function JsAvatar() {
+  const classes = useStyles();
+  return (
+    <Grid container justify="center" alignItems="center">
+      <Grid container justify="center" alignItems="center">
+        <Avatar alt="jsLogo" src={require("./images/js.png")} className={classes.bigAvatar} />   
+      </Grid>
+      <Typography>JavaScript</Typography>
+    </Grid>
+  );
+}
+
+export function Java() {
+  const classes = useStyles();
+  return (
+    <Grid container justify="center" alignItems="center">
+      <Grid container justify="center" alignItems="center">
+        <Avatar alt="javaLogo" src={require("./images/java.png")} className={classes.bigAvatar} />   
+      </Grid>
+      <Typography>Java</Typography>
+    </Grid>
+  );
+}
+
+export function Css() {
+  const classes = useStyles();
+  return (
+    <Grid container justify="center" alignItems="center">
+      <Grid container justify="center" alignItems="center">
+        <Avatar alt="cssLogo" src={require("./images/css.png")} className={classes.bigAvatar} />   
+      </Grid>
+      <Typography>CSS</Typography>
+    </Grid>
+  );
+}
+
+export function Html() {
+  const classes = useStyles();
+  return (
+    <Grid container justify="center" alignItems="center">
+      <Grid container justify="center" alignItems="center">
+        <Avatar alt="HTMLLogo" src={require("./images/html.png")} className={classes.bigAvatar} />   
+      </Grid>
+      <Typography>HTML</Typography>
+    </Grid>
   );
 }
