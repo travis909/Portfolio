@@ -1,11 +1,28 @@
 .nav {
-    background: linear-gradient(#001817, #4f3f5c);
+    background: linear-gradient(#ffffff, #ffffff);
+    opacity: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 100px;
+    color: black;
 }
 
 .navList {
-    width: 250;
+    width: '450px';
+}
+
+.navbar-inner {
+    background:transparent;
 }
 
 .linkText {
     color: rgb(50, 13, 59);
+}
+
+.icon {
+    color: black;
+}
+
+.button {
+    zoom: 300%
 }

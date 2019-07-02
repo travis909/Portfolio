@@ -1,9 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-//import TemporaryDrawer from './Drawer.js';
 import { Link } from "react-router-dom";
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import Button from '@material-ui/core/Button';
@@ -23,7 +19,7 @@ const useStyle1 = makeStyles(theme => ({
     flexGrow: 1,
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginleft: theme.spacing(2),
   },
   title: {
     flexGrow: 1,
@@ -34,14 +30,9 @@ export default function ButtonAppBar() {
   const classes = useStyle1();
   return (
     <div className={classes.root}>
-      <AppBar position="static" className='nav'>
-        <Toolbar>
-          <Typography variant="h6" className={classes.title}>
-            Travis Evans
-          </Typography>
+    
           <TemporaryDrawer />
-        </Toolbar>
-      </AppBar>
+
     </div>
 
   );
@@ -55,7 +46,7 @@ function TemporaryDrawer() {
   };
 
   const [state, setState] = React.useState({
-    right: false,
+    left: false,
   });
 
   const toggleDrawer = (side, open) => event => {
@@ -87,14 +78,14 @@ function TemporaryDrawer() {
 
   return (
     <div>
-      <Button onClick={toggleDrawer('right', true)}><MenuIcon style={{color: 'white'}}/></Button>
+      <Button onClick={toggleDrawer('left', true)} className='button'> <MenuIcon className='icon'/> </Button>
       <SwipeableDrawer
-        anchor="right"
-        open={state.right}
-        onClose={toggleDrawer('right', false)}
-        onOpen={toggleDrawer('right', true)}
+        anchor="left"
+        open={state.left}
+        onClose={toggleDrawer('left', false)}
+        onOpen={toggleDrawer('left', true)}
       >
-        {sideList('right')}
+        {sideList('left')}
       </SwipeableDrawer>
     </div>
   );

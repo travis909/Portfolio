@@ -1,6 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import './mods.css';
+import Typography from '@material-ui/core/Typography'
+
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -11,21 +13,24 @@ const useStyles = makeStyles(theme => ({
     },
     page: {
         textAlign: 'center',
+        justifyContent: 'center',
         flexGrow: 10,
-        flexDirection: 'row',
+        height: '100%',
+        width: '100%',
     },
     hidden: {
         color: 'white'
     }
   }));
 
+
+
 export default function Home() {
     const classes = useStyles();
     return ( 
         <div className={classes.page}>
-            <h1 className={classes.hidden}>.</h1>
-            <h1 className={classes.hidden}>.</h1>
-            <h1 className='title'>Travis Evans</h1>
+        <div style={{height: '22.5%'}}></div>
+            <Typography><h1 className='header'>Travis Evans</h1></Typography>
         </div>
     );
 }

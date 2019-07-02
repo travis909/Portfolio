@@ -1,4 +1,19 @@
+body,
+html {
+    height: 100%
+}
 
-  .test {
-      background-color: aqua
-  }
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1 !important;
+  pointer-events: all;
+}
+.canvas{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1 !important;
+  pointer-events: all;
+}
