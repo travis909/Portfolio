@@ -126,7 +126,7 @@ export default class App extends Component {
       <div className="particles">
           <Particles params={particleOpt} canvasClassName='canvas'/>
 
-          <Router>
+          <Router className="particles">
               <Navigation />
               <Switch>
                 <Route exact path="/" component={Home} />

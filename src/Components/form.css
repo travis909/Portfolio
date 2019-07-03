@@ -1,0 +1,53 @@
+.root {
+    display: 'flex';
+    flex-wrap: 'wrap';
+    justify-content: center;
+    align-items: center;
+}
+
+.margin {
+    margin: theme-spacing(1);
+}
+
+.withoutLabel {
+  margin-top: theme-spacing(3);
+}
+
+.textField {
+    padding-top: 5em;
+}
+
+.message {
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-decoration-color: azure;
+    text-decoration-style: solid;
+}
+
+.message-box {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    color: white;
+    border-radius: 10px;
+    height: 90%;
+    width: 80%;
+    margin: auto;
+}
+
+.Grid {
+    justify-content: center;
+    align-items: center;
+    margin: normal;
+}
+
+.Button {
+    padding-top: 10px;
+    background: rgba(110, 109, 109, 0.534);
+    opacity: 70%;
+}
+
+.ButtonCell {
+    padding-top: 15px;
+}
