@@ -8,7 +8,7 @@ class Contact extends React.Component {
     return (
       <div className='contact-body'>
         <Grid className='contact-grid'>
-            <Form />
+            <h1>Email Form Placeholder</h1>
         </Grid>
       </div>    
     )
