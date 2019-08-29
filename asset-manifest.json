@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.7f560098.chunk.css",
-    "main.js": "/static/js/main.530277fe.chunk.js",
-    "main.js.map": "/static/js/main.530277fe.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.de7e8577.chunk.js": "/static/js/2.de7e8577.chunk.js",
-    "static/js/2.de7e8577.chunk.js.map": "/static/js/2.de7e8577.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.46a1bf423a55cfbe8241b0941fc03851.js": "/precache-manifest.46a1bf423a55cfbe8241b0941fc03851.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.7f560098.chunk.css.map": "/static/css/main.7f560098.chunk.css.map",
-    "static/media/WcuBackground.png": "/static/media/WcuBackground.6440bc70.png",
-    "static/media/css.png": "/static/media/css.a32f83aa.png",
-    "static/media/html.png": "/static/media/html.d1f26ea5.png",
-    "static/media/java.png": "/static/media/java.fb7c0ed5.png",
-    "static/media/js.png": "/static/media/js.7f130501.png",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+    "main.css": "/Portfolio/static/css/main.7f560098.chunk.css",
+    "main.js": "/Portfolio/static/js/main.ec412b8d.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.ec412b8d.chunk.js.map",
+    "runtime~main.js": "/Portfolio/static/js/runtime~main.132fbc8c.js",
+    "runtime~main.js.map": "/Portfolio/static/js/runtime~main.132fbc8c.js.map",
+    "static/js/2.de7e8577.chunk.js": "/Portfolio/static/js/2.de7e8577.chunk.js",
+    "static/js/2.de7e8577.chunk.js.map": "/Portfolio/static/js/2.de7e8577.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "precache-manifest.56f76ff996f14db5878273cfc6adfad6.js": "/Portfolio/precache-manifest.56f76ff996f14db5878273cfc6adfad6.js",
+    "service-worker.js": "/Portfolio/service-worker.js",
+    "static/css/main.7f560098.chunk.css.map": "/Portfolio/static/css/main.7f560098.chunk.css.map",
+    "static/media/WcuBackground.png": "/Portfolio/static/media/WcuBackground.6440bc70.png",
+    "static/media/css.png": "/Portfolio/static/media/css.a32f83aa.png",
+    "static/media/html.png": "/Portfolio/static/media/html.d1f26ea5.png",
+    "static/media/java.png": "/Portfolio/static/media/java.fb7c0ed5.png",
+    "static/media/js.png": "/Portfolio/static/media/js.7f130501.png",
+    "static/media/logo.svg": "/Portfolio/static/media/logo.5d5d9eef.svg"
   }
 }
