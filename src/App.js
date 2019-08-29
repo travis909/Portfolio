@@ -129,12 +129,12 @@ export default class App extends Component {
           <Router className="particles">
               <Navigation />
               <Switch>
-                <Route exact path="/" component={Home} />
                 <Route exact path="/Portfolio" component={Home} />
-                <Route path="/about" component={About} />
-                <Route path="/projects" component={Projects} />
-                <Route path="/skills" component={Skills} />
-                <Route path="/contact" component={Contact} />
+                <Route exact path="/Portfolio/home" component={Home} />
+                <Route path="/Portfolio/about" component={About} />
+                <Route path="/Portfolio/projects" component={Projects} />
+                <Route path="/Portfolio/skills" component={Skills} />
+                <Route path="/Portfolio/contact" component={Contact} />
               </Switch>
           </Router>
       </div>
